@@ -35,7 +35,7 @@ export async function POST(
         });
 
         if (!storeByUserId) {
-            return new NextResponse("Unauthorized", { status: 400 });
+            return new NextResponse("Unauthorized", { status: 403 });
         }
 
         const size = await prismadb.size.create({

@@ -54,7 +54,7 @@ export async function PATCH(
         });
 
         if (!storeByUserId) {
-            return new NextResponse("Unauthorized", { status: 400 });
+            return new NextResponse("Unauthorized", { status: 403 });
         }
 
         const size = await prismadb.size.updateMany({
@@ -92,7 +92,7 @@ export async function DELETE(
         });
 
         if (!storeByUserId) {
-            return new NextResponse("Unauthorized", { status: 400 });
+            return new NextResponse("Unauthorized", { status: 403 });
         }
 
         const size = await prismadb.size.deleteMany({

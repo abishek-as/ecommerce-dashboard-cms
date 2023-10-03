@@ -1,16 +1,16 @@
 # Full Stack E-Commerce + Dashboard & CMS Project 
 ## Technologies used: Next.js 13 App Router, React, Tailwind, Prisma, MySQL
 ### Key Features:
-- I'm using Shadcn UI for the Admin interface.
-- My admin dashboard is functioning as a CMS, Admin, and API.
-- I'm managing multiple vendors and stores through this single CMS, generating API routes for each.
-- I'm handling category, product, and filter management, including image uploads and updates.
-- I'm managing "Billboards" and their association with categories or standalone display.
-- I'm implementing a search feature for all aspects, including pagination.
-- I'm controlling featured products on the homepage and overseeing orders and sales, tracking revenue with graphs.
-- Clerk is handling Authentication.
-- I'm managing order creation and utilizing Stripe checkout and webhooks.
-- I'm using MySQL + Prisma + PlanetScale for the database setup.
+- I utilize Shadcn UI for the administration interface.
+- The admin dashboard serves as a versatile system for CMS, admin functions, and API operations.
+- Multiple vendors and stores are efficiently managed through this centralized CMS, with automated API route generation for each.
+- Comprehensive management of categories, products, filters, and image updates is handled seamlessly.
+- Administration includes overseeing "Billboards" and their associations with categories or standalone displays.
+- Implementation of a robust search functionality across various aspects, complete with pagination features.
+- Oversight of featured products on the homepage, order management, and sales monitoring with revenue tracking through graphical representation.
+- Authentication is managed using Clerk.
+- Order creation is streamlined, integrating Stripe checkout and webhooks for efficient processing.
+- Database setup is established using MySQL, Prisma, and PlanetScale for optimal performance and reliability.
 
 ### Prerequisites
 **Node version 14.x**

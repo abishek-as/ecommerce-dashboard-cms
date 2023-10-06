@@ -1,3 +1,5 @@
+![HomePage](homepage.png)
+
 # Full Stack E-Commerce + Dashboard & CMS Project 
 ## Technologies used: Next.js 13 App Router, React, Tailwind, Prisma, MySQL
 ### Key Features:

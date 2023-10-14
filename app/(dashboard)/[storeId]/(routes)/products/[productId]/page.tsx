@@ -1,7 +1,8 @@
 import prismadb from "@/lib/prismadb";
+
 import { ProductForm } from "./components/product-form";
 
-const ProductsPage = async ({
+const ProductPage = async ({
     params,
 }: {
     params: { productId: string; storeId: string };
@@ -20,11 +21,13 @@ const ProductsPage = async ({
             storeId: params.storeId,
         },
     });
+
     const sizes = await prismadb.size.findMany({
         where: {
             storeId: params.storeId,
         },
     });
+
     const colors = await prismadb.color.findMany({
         where: {
             storeId: params.storeId,
@@ -45,4 +48,4 @@ const ProductsPage = async ({
     );
 };
 
-export default ProductsPage;
+export default ProductPage;

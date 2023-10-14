@@ -1,6 +1,7 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
+
 import { CellAction } from "./cell-action";
 
 export type ColorColumn = {
@@ -11,10 +12,6 @@ export type ColorColumn = {
 };
 
 export const columns: ColumnDef<ColorColumn>[] = [
-    {
-        accessorKey: "name",
-        header: "Name",
-    },
     {
         accessorKey: "name",
         header: "Name",

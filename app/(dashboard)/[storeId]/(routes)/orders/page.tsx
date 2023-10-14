@@ -1,14 +1,26 @@
-import prismadb from "@/lib/prismadb";
-import { OrderClient } from "./components/client";
-import { OrderColumn } from "./components/columns";
 import { format } from "date-fns";
+
+import prismadb from "@/lib/prismadb";
 import { formatter } from "@/lib/utils";
+
+import { OrderColumn } from "./components/columns";
+import { OrderClient } from "./components/client";
 
 const OrdersPage = async ({ params }: { params: { storeId: string } }) => {
     const orders = await prismadb.order.findMany({
-        where: { storeId: params.storeId },
-        include: { orderItems: { include: { product: true } } },
-        orderBy: { createdAt: "desc" },
+        where: {
+            storeId: params.storeId,
+        },
+        include: {
+            orderItems: {
+                include: {
+                    product: true,
+                },
+            },
+        },
+        orderBy: {
+            createdAt: "desc",
+        },
     });
 
     const formattedOrders: OrderColumn[] = orders.map((item) => ({

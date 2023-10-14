@@ -1,6 +1,7 @@
 "use client";
 
 import { ColumnDef } from "@tanstack/react-table";
+
 import { CellAction } from "./cell-action";
 
 export type SizeColumn = {
@@ -11,10 +12,6 @@ export type SizeColumn = {
 };
 
 export const columns: ColumnDef<SizeColumn>[] = [
-    {
-        accessorKey: "name",
-        header: "Name",
-    },
     {
         accessorKey: "name",
         header: "Name",
